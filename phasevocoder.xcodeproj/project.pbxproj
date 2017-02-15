@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7BA97AB1A086ECB005F9124 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C7BA97AA1A086ECB005F9124 /* main.c */; };
+		C75B79641A0A2202008DA887 /* fftext.c in Sources */ = {isa = PBXBuildFile; fileRef = C75B795E1A0A2202008DA887 /* fftext.c */; };
+		C75B79651A0A2202008DA887 /* fftlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C75B79601A0A2202008DA887 /* fftlib.c */; };
+		C75B79661A0A2202008DA887 /* matlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C75B79621A0A2202008DA887 /* matlib.c */; };
+		C75B79AE1A2032FD008DA887 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C75B79AB1A2032FD008DA887 /* libsndfile.a */; };
+		C7BA97B61A086F31005F9124 /* internal.c in Sources */ = {isa = PBXBuildFile; fileRef = C7BA97B11A086F31005F9124 /* internal.c */; };
+		C7BA97B71A086F31005F9124 /* pv.c in Sources */ = {isa = PBXBuildFile; fileRef = C7BA97B31A086F31005F9124 /* pv.c */; };
+		C7BA97B81A086F31005F9124 /* user.c in Sources */ = {isa = PBXBuildFile; fileRef = C7BA97B51A086F31005F9124 /* user.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C75B795E1A0A2202008DA887 /* fftext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fftext.c; path = phasevocoder/fftext.c; sourceTree = "<group>"; };
+		C75B795F1A0A2202008DA887 /* fftext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fftext.h; path = phasevocoder/fftext.h; sourceTree = "<group>"; };
+		C75B79601A0A2202008DA887 /* fftlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fftlib.c; path = phasevocoder/fftlib.c; sourceTree = "<group>"; };
+		C75B79621A0A2202008DA887 /* matlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = matlib.c; path = phasevocoder/matlib.c; sourceTree = "<group>"; };
+		C75B79631A0A2202008DA887 /* matlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matlib.h; path = phasevocoder/matlib.h; sourceTree = "<group>"; };
+		C75B798B1A0A227E008DA887 /* fftlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fftlib.h; path = phasevocoder/fftlib.h; sourceTree = "<group>"; };
+		C75B79AB1A2032FD008DA887 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = phasevocoder/libsndfile.a; sourceTree = "<group>"; };
+		C75B79AC1A2032FD008DA887 /* sndfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sndfile.h; path = phasevocoder/sndfile.h; sourceTree = "<group>"; };
+		C75B79AD1A2032FD008DA887 /* sndfile.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sndfile.hh; path = phasevocoder/sndfile.hh; sourceTree = "<group>"; };
+		C7AC813F1DC50F020034DEB3 /* Stereo_Single_Stroke_Roll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Stereo_Single_Stroke_Roll.wav; path = phasevocoder/Stereo_Single_Stroke_Roll.wav; sourceTree = "<group>"; };
+		C7AC81401DC510310034DEB3 /* sndfile.h.gch */ = {isa = PBXFileReference; lastKnownFileType = file; name = sndfile.h.gch; path = phasevocoder/sndfile.h.gch; sourceTree = "<group>"; };
 		C7BA97A71A086ECB005F9124 /* phasevocoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = phasevocoder; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7BA97AA1A086ECB005F9124 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C7BA97B11A086F31005F9124 /* internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = internal.c; path = phasevocoder/internal.c; sourceTree = "<group>"; };
+		C7BA97B21A086F31005F9124 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = internal.h; path = phasevocoder/internal.h; sourceTree = "<group>"; };
+		C7BA97B31A086F31005F9124 /* pv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pv.c; sourceTree = "<group>"; usesTabs = 0; };
+		C7BA97B41A086F31005F9124 /* pv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pv.h; sourceTree = "<group>"; };
+		C7BA97B51A086F31005F9124 /* user.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = user.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75B79AE1A2032FD008DA887 /* libsndfile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +63,21 @@
 		C7BA979E1A086ECB005F9124 = {
 			isa = PBXGroup;
 			children = (
-				C7BA97A91A086ECB005F9124 /* phasevocoder */,
+				C7AC81401DC510310034DEB3 /* sndfile.h.gch */,
+				C7AC813F1DC50F020034DEB3 /* Stereo_Single_Stroke_Roll.wav */,
+				C75B79AB1A2032FD008DA887 /* libsndfile.a */,
+				C75B79AC1A2032FD008DA887 /* sndfile.h */,
+				C75B79AD1A2032FD008DA887 /* sndfile.hh */,
+				C7BA97B21A086F31005F9124 /* internal.h */,
+				C7BA97B11A086F31005F9124 /* internal.c */,
+				C75B795E1A0A2202008DA887 /* fftext.c */,
+				C75B795F1A0A2202008DA887 /* fftext.h */,
+				C75B798B1A0A227E008DA887 /* fftlib.h */,
+				C75B79601A0A2202008DA887 /* fftlib.c */,
+				C75B79621A0A2202008DA887 /* matlib.c */,
+				C75B79631A0A2202008DA887 /* matlib.h */,
 				C7BA97A81A086ECB005F9124 /* Products */,
+				C7BA97A91A086ECB005F9124 /* phasevocoder */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +92,9 @@
 		C7BA97A91A086ECB005F9124 /* phasevocoder */ = {
 			isa = PBXGroup;
 			children = (
-				C7BA97AA1A086ECB005F9124 /* main.c */,
+				C7BA97B41A086F31005F9124 /* pv.h */,
+				C7BA97B31A086F31005F9124 /* pv.c */,
+				C7BA97B51A086F31005F9124 /* user.c */,
 			);
 			path = phasevocoder;
 			sourceTree = "<group>";
@@ -118,7 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BA97AB1A086ECB005F9124 /* main.c in Sources */,
+				C75B79661A0A2202008DA887 /* matlib.c in Sources */,
+				C7BA97B61A086F31005F9124 /* internal.c in Sources */,
+				C7BA97B71A086F31005F9124 /* pv.c in Sources */,
+				C75B79641A0A2202008DA887 /* fftext.c in Sources */,
+				C7BA97B81A086F31005F9124 /* user.c in Sources */,
+				C75B79651A0A2202008DA887 /* fftlib.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +244,12 @@
 		C7BA97AF1A086ECB005F9124 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zihengchen/Desktop/tmp,
+					"$(PROJECT_DIR)/phasevocoder",
+				);
+				"OTHER_CFLAGS[arch=*]" = "-I/usr/local/include/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +257,11 @@
 		C7BA97B01A086ECB005F9124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zihengchen/Desktop/tmp,
+					"$(PROJECT_DIR)/phasevocoder",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -232,6 +285,7 @@
 				C7BA97B01A086ECB005F9124 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
