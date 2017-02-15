@@ -1,4 +1,4 @@
-# Real-time Phase Vocoder Component
+#Real-time Phase Vocoder Component
 
 This is the real-time phase vocoder doing time-stretching in Human Computer Music Performance. Be sure to include libsndfile before using it.
 
